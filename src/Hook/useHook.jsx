@@ -12,7 +12,7 @@ const useHook = () => {
     setTimeout(()=>{
       setFriendes(data);
       setLoading(false)
-    }, 3000)
+    }, 2000)
    }
     useEffect(()=>{
       dataFetch();

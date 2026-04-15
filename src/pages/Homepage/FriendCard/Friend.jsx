@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Friend = ({fnd}) => {
-    const {name, picture, days_since_contact, status, tags} = fnd
+    const {id, name, picture, days_since_contact, status, tags} = fnd
     return (
-        <div className='p-4 flex flex-col items-center border shadow-md rounded-md space-y-2'>
+        <Link to={`/friend/${id}`} className='p-4 flex flex-col items-center border shadow-md bg-base-300 rounded-md space-y-2'>
             <div className='h-[50px] w-[50px] rounded-full mx-auto overflow-hidden'>
               <img src={picture} alt={name} className='h-[100%] w-[100%] object-center' />
             </div>
@@ -23,7 +24,7 @@ const Friend = ({fnd}) => {
               </div>
             </div>
 
-        </div>
+        </Link>
     )
 };
 
