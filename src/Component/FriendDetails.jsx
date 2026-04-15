@@ -6,6 +6,7 @@ import { CiInboxOut, CiVideoOn } from 'react-icons/ci';
 import { IoIosNotificationsOutline } from 'react-icons/io';
 import { FaRegTrashCan } from 'react-icons/fa6';
 import { meetContext } from '../Context/UseContextProvider';
+import { toast } from 'react-toastify';
 
 const FriendDetails = () => {
   
@@ -36,6 +37,7 @@ const FriendDetails = () => {
         emoji:'📞'
      }
      setMeet([...meet, callEntry]);
+     toast.success(`call with ${name}`)
   }
 
    const textHandelar =()=>{
@@ -47,6 +49,7 @@ const FriendDetails = () => {
         emoji:'💬'
      }
      setMeet([...meet, textEntry]);
+     toast.success(`text with ${name}`)
   }
 
 
@@ -58,6 +61,7 @@ const FriendDetails = () => {
         emoji:'🎥'
      }
      setMeet([...meet, videoEntry]);
+     toast.success(`video with ${name}`)
   }
 
 

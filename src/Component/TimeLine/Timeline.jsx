@@ -33,9 +33,23 @@ const Timeline = () => {
               <div className="dropdown dropdown-start">
                 <div tabIndex={0} role="button" className="btn m-1 flex items-center"><span>Filter timeline</span> <IoIosArrowDown /></div>
                 <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                    <li onClick={()=>setHandelarText('call')}><a>Call Filter</a></li>
-                    <li onClick={()=>setHandelarText('text')}><a>Text Filter</a></li>
-                    <li onClick={()=>setHandelarText('video')}><a>Video Filter</a></li>
+                    <li onClick={()=>setHandelarText('call')}><a className='flex items-center justify-between'><span>Call Filter</span>
+                        {
+                        handelarText == 'call'? <span>✔️</span>:''
+                        } 
+                        </a></li>
+                    <li onClick={()=>setHandelarText('text')}><a className='flex items-center justify-between'>
+                        <span>Text Filter</span>
+                        {
+                        handelarText == 'text'? <span>✔️</span>:''
+                        }
+                        </a></li>
+                    <li onClick={()=>setHandelarText('video')}><a className='flex items-center justify-between'>
+                        <span>Video Filter</span>
+                        {
+                        handelarText == 'video'? <span>✔️</span>:''
+                        }
+                        </a></li>
                 </ul>
                </div>
             </div>

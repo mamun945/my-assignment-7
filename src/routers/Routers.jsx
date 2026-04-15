@@ -4,6 +4,7 @@ import Home from '../Component/HomePage/Home';
 import Root from '../Root/Root';
 import FriendDetails from '../Component/FriendDetails';
 import Timeline from '../Component/TimeLine/Timeline';
+import Dashboard from '../Component/Dashborad/Dashboard';
 
 export const router = createBrowserRouter([
   {
@@ -12,7 +13,8 @@ export const router = createBrowserRouter([
     children:[
       {index:true, Component:Home},
       {path:'/friend/:friendId', Component:FriendDetails},
-      {path:'/notification', Component:Timeline}
+      {path:'/notification', Component:Timeline},
+      {path:'/dashboard', Component:Dashboard}
     ]
   }
 ])

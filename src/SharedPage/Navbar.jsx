@@ -14,7 +14,7 @@ const Navbar = () => {
 
                    <NavLink className={({isActive})=>`${isActive? 'bg-[#507065] text-white':''} px-3 py-1 rounded-md flex items-center gap-2`} to={'/notification'}><CiClock2 /> Timeline</NavLink>
 
-                   <NavLink className={({isActive})=>`${isActive? 'bg-[#507065] text-white':''} px-3 py-1 rounded-md flex items-center gap-2`} to={'/dashbord'}><GoGraph /> Stats</NavLink>
+                   <NavLink className={({isActive})=>`${isActive? 'bg-[#507065] text-white':''} px-3 py-1 rounded-md flex items-center gap-2`} to={'/dashboard'}><GoGraph /> Stats</NavLink>
                  </ul>
             </nav>
         </div>
