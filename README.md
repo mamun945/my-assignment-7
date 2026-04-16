@@ -1,16 +1,36 @@
-# React + Vite
+###Name of your project?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ans:Friendify
 
-Currently, two official plugins are available:
+####A short description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Ans:This JavaScript-based project is an interactive friend profile application where users can explore a collection of friend bio cards. Each card displays a profile photo and basic information, and when clicked, it opens a detailed view with more personal details. The app also includes communication features, allowing users to call, send text messages, and initiate video calls directly from the profile interface. Designed with a user-friendly layout and smooth interactions, the project demonstrates skills in DOM manipulation, event handling, and UI design. It simulates a mini social networking experience focused on connectivity and easy access to friend information.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+####Technologies you used
 
-## Expanding the ESLint configuration
+Ans:
+1.React.js
+2.Javascript
+3.TailwindCss
+4.HTML
+5.CSS
+6.desy ui
+7.Recharts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+###3 key features of your project
+
+Ans:
+
+### 1. Interactive Friend Cards
+
+Users can view friend bio cards with photos and basic info. Clicking on a card opens a detailed profile view, creating a smooth and engaging user experience.
+
+### 2. Built-in Communication Options
+
+The app allows users to call, send text messages, and start video calls directly from a friend’s profile, making it more like a mini social communication platform.
+
+### 3. Fully Responsive Design
+
+The project is optimized for mobile, tablet, and large screens, ensuring a consistent and user-friendly experience across all devices.
