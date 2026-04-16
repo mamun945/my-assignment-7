@@ -13,9 +13,6 @@ const Dashboard = () => {
         { name: 'video', value: video.length, fill: '#FFBB28' },
         ];
 
-
-      
-
     return (
          <div>
            <div className='container mx-auto my-8'>
