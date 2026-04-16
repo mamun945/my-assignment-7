@@ -7,7 +7,7 @@ const FourCard = () => {
     const almost = friendes.filter(friend => friend.status == 'Almost Due')
     return (
         <div className='container mx-auto px-10 py-10'>
-            <div className='grid grid-cols-4 gap-4'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4'>
             <div className='card-1 shadow-md bg-base-300 text-center py-10 rounded-md'>
              <h1 className='text-[#244d3f] font-bold text-xl'>{friendes.length}</h1>
              <p className='text-[#8591a4] font-semibold'>Total Friends</p>

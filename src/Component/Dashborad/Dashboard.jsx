@@ -13,7 +13,7 @@ const Dashboard = () => {
         { name: 'video', value: video.length, fill: '#FFBB28' },
         ];
     return (
-        <div className='container mx-auto mt-10'>
+        <div className='container mx-auto my-10'>
         <PieChart style={{ width: '100%', maxWidth: '400px', maxHeight: '40vh', aspectRatio: 1, margin:'auto' }} responsive>
             <Pie
                 data={data}

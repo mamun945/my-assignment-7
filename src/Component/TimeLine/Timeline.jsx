@@ -27,7 +27,7 @@ const Timeline = () => {
 
     console.log(meet, 'timeline theke');
     return (
-        <div className='container mx-auto my-10'>
+        <div className='container mx-auto my-10 px-6'>
             <h1 className=' text-2xl font-bold'>Timeline</h1>
             <div>
               <div className="dropdown dropdown-start">

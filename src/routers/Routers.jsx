@@ -5,6 +5,7 @@ import Root from '../Root/Root';
 import FriendDetails from '../Component/FriendDetails';
 import Timeline from '../Component/TimeLine/Timeline';
 import Dashboard from '../Component/Dashborad/Dashboard';
+import Notfound from '../pages/NotFoundPage/Notfound';
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
       {path:'/friend/:friendId', Component:FriendDetails},
       {path:'/notification', Component:Timeline},
       {path:'/dashboard', Component:Dashboard}
-    ]
+    ],
+    errorElement:<Notfound></Notfound>
   }
 ])

@@ -67,7 +67,7 @@ const FriendDetails = () => {
 
 //    console.log(meet , 'sob kota')
     return (
-        <div className='container mx-auto flex gap-10 mt-10'>
+        <div className='container mx-auto flex flex-col md:flex-row gap-10 my-10 px-4'>
             <div className='1st-section space-y-3'>
                 <div className='py-4 shadow-md rounded-md flex flex-col px-10 flex flex-col items-center space-y-2'>
                     <div className='h-[100px] w-[100px] border rounded-full overflow-hidden'>
@@ -106,7 +106,7 @@ const FriendDetails = () => {
                </div>
             </div>
             <div className='2nd-section basis-[70%]'>
-               <div className='upper-section grid grid-cols-3 gap-4'>
+               <div className='upper-section grid grid-cols-1 sm:grid-cols-3 gap-4'>
                 <div className='py-8 text-center border rounded-md shadow-md'>
                 <h2 className='font-bold text-xl text-[#32584b]'>{days_since_contact}</h2>
                 <p className='font-semibold text-[#64748b]'>Days Since Contract</p>
@@ -133,7 +133,7 @@ const FriendDetails = () => {
 
                <div>
                  <p className='font-semibold text-[#64748b]'>Quick Check-in</p>
-                 <div className='grid grid-cols-3 gap-3 text-center mt-5'>
+                 <div className='grid grid-cols-1 sm:grid-cols-3 gap-3 text-center mt-5'>
                     <div onClick={callHandelar} className='flex flex-col items-center border py-5 rounded-md shadow-md bg-base-300'>
                         <MdAddIcCall />
                         <p>call</p>
