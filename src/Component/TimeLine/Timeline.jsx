@@ -18,9 +18,12 @@ const Timeline = () => {
             }else if(handelarText == 'text'){
                 const textFilter = [...meet].filter(item => item.interactionType == 'text');
                 setFilter(textFilter)
-            }else{
+            }else if(handelarText == 'video'){
                 const videoFilter = [...meet].filter(item => item.interactionType == 'video');
                 setFilter(videoFilter);
+            }else{
+              const timeFilter = [...meet].sort( (a, b) => new Date(a.dated) - new Date(b.dated));
+              setFilter(timeFilter);
             }
         }
 
@@ -34,8 +37,6 @@ const Timeline = () => {
         if(filter){
            const value = [...meet].filter(met => met.interactionType.includes(input) || met.name.toLowerCase().includes(input))
           setFilter(value);   
-        }else{
-            toast.error('no data found!')
         }
 
     }
@@ -64,6 +65,13 @@ const Timeline = () => {
                         <span>Video Filter</span>
                         {
                         handelarText == 'video'? <span>✔️</span>:''
+                        }
+                        </a></li>
+
+                      <li onClick={()=>setHandelarText('time')}><a className='flex items-center justify-between'>
+                        <span>Time Filter</span>
+                        {
+                        handelarText == 'time'? <span>✔️</span>:''
                         }
                         </a></li>
                 </ul>
