@@ -12,9 +12,25 @@ const Dashboard = () => {
         { name: 'text', value: text.length, fill: '#00C49F' },
         { name: 'video', value: video.length, fill: '#FFBB28' },
         ];
+
+
+      
+
     return (
-        <div className='container mx-auto my-10'>
-        <PieChart style={{ width: '100%', maxWidth: '400px', maxHeight: '40vh', aspectRatio: 1, margin:'auto' }} responsive>
+         <div>
+           <div className='container mx-auto my-8'>
+             <h1 className='text-2xl font-bold'>Friendship Analytics</h1>
+              <p className='mt-10 text-[#507065]'>By Interaction Type:</p>
+           </div>
+
+            {
+              meet.length == 0 ?  <div className='container mx-auto'>
+             <div className='h-[40vh] text-center flex justify-center items-center'>
+                <h1 className='text-xl text-[#507065] opacity-[50%]'>No Interaction logged yet...</h1>
+             </div>
+        </div> :
+              <div className='container mx-auto my-10'>
+            <PieChart style={{ width: '100%', maxWidth: '400px', maxHeight: '40vh', aspectRatio: 1, margin:'auto' }} responsive>
             <Pie
                 data={data}
                 innerRadius="80%"
@@ -31,6 +47,9 @@ const Dashboard = () => {
             <Tooltip/>
             </PieChart>
         </div>
+
+            }
+         </div>
     );
 };
 

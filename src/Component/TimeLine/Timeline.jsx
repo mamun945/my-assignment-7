@@ -26,7 +26,10 @@ const Timeline = () => {
     }, [handelarText])
 
     console.log(meet, 'timeline theke');
+
+
     return (
+       <>
         <div className='container mx-auto my-10 px-6'>
             <h1 className=' text-2xl font-bold'>Timeline</h1>
             <div>
@@ -53,12 +56,21 @@ const Timeline = () => {
                 </ul>
                </div>
             </div>
+            {
+               meet.length == 0 ?
+               <div className=''>
+             <div className='h-[40vh] text-center flex justify-center items-center'>
+                <h1 className='text-xl text-[#507065] opacity-[50%]'>No data Found!</h1>
+             </div>
+        </div> :
             <div>
             {
               filter.map((met,ind) => <SingleCard key={ind} met={met}></SingleCard>)
             }
-        </div>
+        </div> 
+            }
         </div>  
+       </>
     );
 };
 
