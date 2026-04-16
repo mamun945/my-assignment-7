@@ -6,9 +6,9 @@ import Footer from '../SharedPage/Footer';
 const Root = () => {
     return (
         <>
-          <Navbar></Navbar>
+          {/* <Navbar></Navbar> */}
           <Outlet></Outlet>
-          <Footer></Footer>
+          {/* <Footer></Footer> */}
         </>
     );
 };
